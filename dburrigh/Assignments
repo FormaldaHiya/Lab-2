@@ -9,22 +9,29 @@ When n is equal to one you stop, otherwise you pick the appropriate step again.
 
 Please print out the sequence of numbers that lead to 1, starting with n, and how many times (in sumation) the above two commands are run.
 -------------------------------------------------------------------------------------------------------------------------------------------
+Public Problem #2
+{
+Public function(int value)
+{
 int value = n;
 
-If n => 10_000
+If n => 10000
 {
-return "not good"
+return "not good" // we do not want to have a number greater than 10000
 }
 Print n;
 While n != 1
 {
-if n % 2 == 0
+if n % 2 == 0 // this checks to see if the n has a remainder when divided by two.
 {
-n = n/2;
+n = n/2; // do this when n is even
 Print n,
-}
+} 
 else 
 {
-n = 3n + 1;
+n = 3n + 1; // do this when n is odd
 Print n
-}}
+}
+} // end while
+} // end function
+} // end problem
