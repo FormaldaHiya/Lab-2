@@ -11,15 +11,16 @@ Please print out the sequence of numbers that lead to 1, starting with n, and ho
 
 n = input number
 counter=0 /*the value that keeps track of how many times number runs through the loop*/
-for(int i=0, ??, i++){
+
+for(int i=0, n!=1 /*(this is tested before loop is executed)*/, i++){
 	if (n%2==0){
-		w=n/2
+		w=n/2        //can be n=n/2
 		Print w
 		count= counter +1
 		counter=count
 		n=w
 	}
-	else if(n%2!==0){
+	else { // (n%2!=0)
 		x=3*n
 		y=x+1
 		coUnt= counter +1
@@ -27,8 +28,8 @@ for(int i=0, ??, i++){
 		Print y
 		n=y
 	}
-	else{
-		Print n
-		Print "The number of times ran throught"+counter
-		Break
-	}
+}
+Print n
+Print "The number of times ran throught"+counter
+		
+	
