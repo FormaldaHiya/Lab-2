@@ -1,4 +1,4 @@
-Integer num =
+"Integer num =
 step=0
 While (num > 1){
 	if (num%2==0){
@@ -12,4 +12,4 @@ While (num > 1){
 	step += 1
 	}
 }
-system.out.print(step)
+system.out.print("# of steps:" step)
