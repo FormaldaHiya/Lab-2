@@ -6,7 +6,7 @@ While (num > 1){
 	system.out.print(num)
 	step += 1
 	}
-	esle(){
+	esle{
 	num = num*3 +1
 	system.out.print(num)
 	step += 1
