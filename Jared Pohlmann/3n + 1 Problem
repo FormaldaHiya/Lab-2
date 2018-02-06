@@ -1,15 +1,15 @@
-"Integer num =
+Integer num = input number;
 step=0
 While (num > 1){
 	if (num%2==0){
-	num= num/2
-	system.out.print(num)
-	step += 1
+	num= num/2;
+	system.out.print(num);
+	step += 1;
 	}
-	esle{
-	num = num*3 +1
-	system.out.print(num)
-	step += 1
+	else{
+	num = num*3 +1;
+	system.out.print(num);
+	step += 1;
 	}
 }
 system.out.print("# of steps:" step)
