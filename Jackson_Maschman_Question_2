@@ -1,0 +1,25 @@
+public class Lab2 {
+    public static void main(String[] args)
+    {
+        //This is problem #2.
+        for(int n = 1; n < 10000; n++) //The parameters you set were numbers from 0 to less than 10000, so... here you go.
+        {
+            int counter = 0; //This sets the counter to 0 each time it finishes with one of the numbers.
+            while(n != 1) //This checks the number each loop to see if it has reached 1 yet.
+            {
+                if (n % 2 == 0) //This organizes the even numbers into this category.
+                {
+                        n = (n / 2);
+                        counter = counter + 1;
+                }
+
+                else { /* This organizes the odd numbers into this category. */
+                    n = ((n * 3) + 1);
+                    counter = counter + 1;
+                }
+
+            }
+            System.out.println(n + " It took " + counter + " loops to complete.");
+        }
+    }
+}
