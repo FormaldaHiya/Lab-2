@@ -1,0 +1,39 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Random rand = new Random();
+        int numberToGuess = rand.nextInt(1000);
+        /* Generates random number up to 1000 */
+        int numberOfTries = 0;
+        /* Sets initial number of tries to 0 */
+        Scanner input = new Scanner(System.in);
+        /* Implements a scanner to track number of guesses */
+        int guess = 0;
+        boolean win = false;
+
+        while (win == false) {
+
+            System.out.println("Guess a number between 1 and 1000: ");
+            /* Tells used to guess a number between 1 and 1000 */
+            numberOfTries++;
+
+            if (guess == numberToGuess) {
+                win = true;
+            } else if (guess < numberToGuess) {
+                System.out.println("Your guess is too low: ");
+            } else if (guess > numberToGuess) {
+                System.out.println("Your guess is too high");
+            }
+        }
+
+        System.out.println("You win!");
+        System.out.println("The number was" + numberToGuess);
+        System.out.println("It took you" + numberOfTries + "tries");
+
+
+    }
+}
